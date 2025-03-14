@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* Recuo de 40px na primeira linha de cada parágrafo */
+p {
+    text-indent: 40px;
+    letter-spacing: 5px; /* Espaçamento entre letras nos parágrafos */
+}
+
+/* Espaçamento entre letras de 8px no título */
+h1 {
+    letter-spacing: 8px;
+}

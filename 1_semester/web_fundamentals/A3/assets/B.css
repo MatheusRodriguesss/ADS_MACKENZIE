@@ -1,0 +1,15 @@
+@charset "utf-8";
+/* Alinhar o texto do cabeçalho da tabela no centro */
+th {
+    text-align: center;
+}
+
+/* Alinhar o texto das células de dados da tabela à direita */
+td {
+    text-align: right;
+}
+
+/* Justificar o texto nos parágrafos comuns */
+p {
+    text-align: justify;
+}

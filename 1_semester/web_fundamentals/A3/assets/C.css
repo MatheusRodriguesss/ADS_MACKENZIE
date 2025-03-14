@@ -1,0 +1,8 @@
+@charset "utf-8";
+h1 {
+    text-transform: uppercase; /* Transforma o texto do cabeçalho em maiúsculas */
+}
+
+li {
+    text-transform: capitalize; /* Capitaliza a primeira letra de cada nome */
+}

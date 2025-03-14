@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+#A, #B, #C, #D {
+    width: 100px;
+    height: 100px;
+}
+
+#esq {
+    float: left; /* Flutua à esquerda */
+}
+
+#dir {
+    float: right; /* Flutua à direita */
+}
