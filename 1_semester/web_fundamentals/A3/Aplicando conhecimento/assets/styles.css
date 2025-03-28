@@ -9,23 +9,32 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-image: url('assets/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 header {
+    position: fixed;
+    top: 0;
+    width: 100%;
     background-color: #333;
     color: white;
     padding: 10px 0;
     text-align: center;
+    z-index: 1000;
 }
 
 header h1 {
     margin: 0;
 }
 
+
 nav ul {
     list-style: none;
     padding: 0;
+    text-align: center;
 }
 
 nav ul li {
@@ -38,27 +47,43 @@ nav ul li a {
     text-decoration: none;
 }
 
+
 main {
+    position: relative;
+    top: 80px;
     padding: 20px;
 }
 
 .welcome {
     text-align: center;
+    position: relative;
+    top: 20px;
 }
 
 .welcome .btn {
     display: inline-block;
     margin-top: 10px;
     padding: 10px 20px;
-    background-color: #333;
+    background-color: #ff6600;
     color: white;
     text-decoration: none;
+    border-radius: 5px;
+}
+
+.featured-products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: 40px;
 }
 
 .featured-products ul, .products ul {
     list-style: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 20px;
 }
 
 .featured-products li, .products li {
@@ -67,6 +92,8 @@ main {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    width: 250px;
+    position: relative;
 }
 
 .featured-products img, .products img {
@@ -75,12 +102,14 @@ main {
     object-fit: cover;
 }
 
-.contact-form form {
-    width: 80%;
-    margin: 0 auto;
+.contact-form {
+    width: 60%;
+    margin: 50px auto;
     background-color: #fff;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 50px;
 }
 
 .contact-form table {
@@ -100,9 +129,12 @@ main {
 }
 
 footer {
-    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     background-color: #333;
     color: white;
+    text-align: center;
     padding: 10px 0;
-    margin-top: 20px;
+    z-index: 1000;
 }
